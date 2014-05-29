@@ -26,7 +26,7 @@
         [unsortedBoardingCards addObject:boardingCard];
     }
     if (unsortedBoardingCards.count) {
-        self.unsortedBoardingCards = unsortedBoardingCards;
+        self.unsortedBoardingCards = [NSArray arrayWithArray: unsortedBoardingCards];
     }
 }
 

@@ -29,6 +29,7 @@
 		C925916C19368AE7007ACEF3 /* WAMTransportFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C925916B19368AE7007ACEF3 /* WAMTransportFactory.m */; };
 		C925916E19369238007ACEF3 /* BoardingCards.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925916D19369238007ACEF3 /* BoardingCards.plist */; };
 		C925917119369672007ACEF3 /* WAMDataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C925917019369672007ACEF3 /* WAMDataSourceManager.m */; };
+		C92591751936D4FC007ACEF3 /* WAMDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92591741936D4FC007ACEF3 /* WAMDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,8 @@
 		C925913319366D0E007ACEF3 /* WAMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMAppDelegate.h; sourceTree = "<group>"; };
 		C925913419366D0E007ACEF3 /* WAMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMAppDelegate.m; sourceTree = "<group>"; };
 		C925913719366D0E007ACEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C925913919366D0E007ACEF3 /* WAMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMViewController.h; sourceTree = "<group>"; };
-		C925913A19366D0E007ACEF3 /* WAMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMViewController.m; sourceTree = "<group>"; };
+		C925913919366D0E007ACEF3 /* WAMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WAMViewController.h; path = ../WAMViewController.h; sourceTree = "<group>"; };
+		C925913A19366D0E007ACEF3 /* WAMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WAMViewController.m; path = ../WAMViewController.m; sourceTree = "<group>"; };
 		C925913C19366D0E007ACEF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C925914219366D0E007ACEF3 /* WAMTestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WAMTestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C925914319366D0E007ACEF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -76,6 +77,8 @@
 		C925916D19369238007ACEF3 /* BoardingCards.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BoardingCards.plist; sourceTree = "<group>"; };
 		C925916F19369672007ACEF3 /* WAMDataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAMDataSourceManager.h; sourceTree = "<group>"; };
 		C925917019369672007ACEF3 /* WAMDataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAMDataSourceManager.m; sourceTree = "<group>"; };
+		C92591731936D4FC007ACEF3 /* WAMDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAMDetailsViewController.h; sourceTree = "<group>"; };
+		C92591741936D4FC007ACEF3 /* WAMDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAMDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +138,11 @@
 		C925912A19366D0E007ACEF3 /* WAMTestCode */ = {
 			isa = PBXGroup;
 			children = (
+				C92591721936D498007ACEF3 /* ViewControllers */,
 				C9259159193680A9007ACEF3 /* DataSource */,
 				C925913319366D0E007ACEF3 /* WAMAppDelegate.h */,
 				C925913419366D0E007ACEF3 /* WAMAppDelegate.m */,
 				C925913619366D0E007ACEF3 /* Main.storyboard */,
-				C925913919366D0E007ACEF3 /* WAMViewController.h */,
-				C925913A19366D0E007ACEF3 /* WAMViewController.m */,
 				C925913C19366D0E007ACEF3 /* Images.xcassets */,
 				C925912B19366D0E007ACEF3 /* Supporting Files */,
 			);
@@ -181,10 +183,10 @@
 			children = (
 				C92591671936889C007ACEF3 /* WAMBoardingCard.h */,
 				C92591681936889C007ACEF3 /* WAMBoardingCard.m */,
-				C925915A193680E7007ACEF3 /* Transportation */,
 				C925916D19369238007ACEF3 /* BoardingCards.plist */,
 				C925916F19369672007ACEF3 /* WAMDataSourceManager.h */,
 				C925917019369672007ACEF3 /* WAMDataSourceManager.m */,
+				C925915A193680E7007ACEF3 /* Transportation */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -204,6 +206,17 @@
 				C9259165193686BA007ACEF3 /* WAMTransportAirplane.m */,
 			);
 			path = Transportation;
+			sourceTree = "<group>";
+		};
+		C92591721936D498007ACEF3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C925913919366D0E007ACEF3 /* WAMViewController.h */,
+				C925913A19366D0E007ACEF3 /* WAMViewController.m */,
+				C92591731936D4FC007ACEF3 /* WAMDetailsViewController.h */,
+				C92591741936D4FC007ACEF3 /* WAMDetailsViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,7 @@
 				C92591691936889C007ACEF3 /* WAMBoardingCard.m in Sources */,
 				C925913B19366D0E007ACEF3 /* WAMViewController.m in Sources */,
 				C925916319368591007ACEF3 /* WAMTransportTrain.m in Sources */,
+				C92591751936D4FC007ACEF3 /* WAMDetailsViewController.m in Sources */,
 				C9259166193686BA007ACEF3 /* WAMTransportAirplane.m in Sources */,
 				C925913519366D0E007ACEF3 /* WAMAppDelegate.m in Sources */,
 				C925916019368301007ACEF3 /* WAMTransportBus.m in Sources */,
@@ -519,6 +533,7 @@
 				C925915519366D0E007ACEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C925915619366D0E007ACEF3 /* Build configuration list for PBXNativeTarget "WAMTestCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +542,7 @@
 				C925915819366D0E007ACEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

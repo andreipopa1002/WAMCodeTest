@@ -16,5 +16,6 @@
 
 - (id)initWithDictionary: (NSDictionary *)boardingCardDictionary;
 - (NSString *)boardingCardDescription;
+- (NSString *)shortCardDescription;
 
 @end

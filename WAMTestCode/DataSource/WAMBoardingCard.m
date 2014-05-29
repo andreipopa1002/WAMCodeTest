@@ -32,4 +32,8 @@
 - (NSString *)boardingCardDescription {
     return [self.transport transportDescriptionForDeparture:self.departure andArrival:self.arrival];
 }
+
+- (NSString *)shortCardDescription {
+    return [NSString stringWithFormat:@"%@ - %@ > %@",self.transport.transportName,self.departure,self.arrival];
+}
 @end

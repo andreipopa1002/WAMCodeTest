@@ -7,8 +7,11 @@
 //
 
 #import "WAMViewController.h"
+#import "WAMDataSourceManager.h"
+#import "WAMBoardingCard.h"
 
 @interface WAMViewController ()
+@property (nonatomic, strong, readwrite) WAMDataSourceManager *dataSource;
 
 @end
 
@@ -17,6 +20,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.dataSource = [WAMDataSourceManager new];
+    [self.dataSource loadData];
+    [self.dataSource sortBoardingCards];
+    // debug code - to be removed
+    for (WAMBoardingCard *boardingCard in self.dataSource.sortedBoardingCards) {
+        NSLog(@"%@",boardingCard.boardingCardDescription);
+    }
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>transport</key>
+		<dict>
+			<key>baggage</key>
+			<string>Baggage drop at ticket counter 344</string>
+			<key>gate</key>
+			<string>45B</string>
+			<key>seat</key>
+			<string>3A</string>
+			<key>number</key>
+			<string>SK455</string>
+			<key>transportName</key>
+			<string>flight </string>
+		</dict>
+		<key>arrival</key>
+		<string>London</string>
+		<key>departure</key>
+		<string>Gerona Airport</string>
+	</dict>
+	<dict>
+		<key>transport</key>
+		<dict>
+			<key>baggage</key>
+			<string>Baggage drop at ticket counter 100.</string>
+			<key>gate</key>
+			<string>CBR600</string>
+			<key>seat</key>
+			<string>1</string>
+			<key>number</key>
+			<string>1234</string>
+			<key>transportName</key>
+			<string>flight</string>
+		</dict>
+		<key>arrival</key>
+		<string>Bucharest Otopeni</string>
+		<key>departure</key>
+		<string>New York JFK</string>
+	</dict>
+	<dict>
+		<key>transport</key>
+		<dict>
+			<key>seat</key>
+			<string>45B</string>
+			<key>number</key>
+			<string>78A</string>
+			<key>transportName</key>
+			<string>train</string>
+		</dict>
+		<key>arrival</key>
+		<string>Barcelona</string>
+		<key>departure</key>
+		<string>Madrid</string>
+	</dict>
+	<dict>
+		<key>transport</key>
+		<dict>
+			<key>transportName</key>
+			<string>airport bus</string>
+		</dict>
+		<key>arrival</key>
+		<string>Gerona Airport</string>
+		<key>departure</key>
+		<string>Barcelona</string>
+	</dict>
+	<dict>
+		<key>transport</key>
+		<dict>
+			<key>baggage</key>
+			<string>Baggage will automatically be transferred from your last connection</string>
+			<key>gate</key>
+			<string>22</string>
+			<key>seat</key>
+			<string>7B</string>
+			<key>number</key>
+			<string>SK22</string>
+			<key>transportName</key>
+			<string>flight</string>
+		</dict>
+		<key>arrival</key>
+		<string>New York JFK</string>
+		<key>departure</key>
+		<string>London</string>
+	</dict>
+</array>
+</plist>
